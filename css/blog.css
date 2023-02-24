@@ -47,10 +47,6 @@ ul li a {
     font-family: 'Roboto', sans-serif;
 }
 
-.grid {
-    border-style: double;
-}
-
 h2 {
     font-family: 'Gloock', sans-serif;
     padding-left: 50px;
@@ -74,14 +70,21 @@ h3 {
     padding-left: 50px;
 }
 
-#imgNotice1 {
-    float: right;
+.formatTextImage {
+    border-style: solid;
+
+}
+
+.blogImage {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
     margin: 0% 35%;
     padding: 1em;
-    border-style: double;
 }
 
 #footer_img {
