@@ -1,21 +1,20 @@
 body {
     margin: auto;
-    background-image: linear-gradient(rgba(114, 134, 211, 0.3), rgba(142, 167, 233, 0.3), rgba(255, 231, 204, 0.3), rgba(235, 199, 230, 0.3));  
+    background-image: linear-gradient(rgba(114, 134, 211, 0.3), rgba(142, 167, 233, 0.3), rgba(255, 231, 204, 0.3), rgba(235, 199, 230, 0.3));
 }
 
 header {
     text-align: center;
-    padding: 30px ;
+    padding: 30px;
     background-color: #da245b;
-    /* background-image: url(../media/nav_bar.jpg); */
 }
 
 header nav a {
-    color: beige;
+    color:antiquewhite;
     font-family: 'Roboto', sans-serif;
     margin: 0% 10%;
     padding: 1em;
-    border-style: solid  ;
+    border-style: solid;
 }
 
 header nav a:hover {
@@ -34,11 +33,11 @@ ul {
     list-style-type: none;
     margin: 2%;
     padding-left: 20px;
-  }
+}
 
 ul:hover {
     background-color: rgba(114, 134, 211, 0.2);
-    border-left: 0.5rem solid navy ;
+    border-left: 0.5rem solid navy;
 }
 
 ul li a {
@@ -62,7 +61,6 @@ h3 {
     font-family: 'Roboto', sans-serif;
     text-align: justify;
     padding: 2px 100px;
-
 }
 
 .date {
@@ -70,16 +68,46 @@ h3 {
     padding-left: 50px;
 }
 
-.formatTextImage {
-    border-style: solid;
-
+.fadeGeneralBox {
+    position: relative;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .blogImage {
-    width: 30%;
+    opacity: 1;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%; 
+    /* supose to be 100% */
+    height: auto;
+    transition:  .5s ease;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.textBox {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fadeGeneralBox:hover .blogImage {
+    opacity: 0.3;
+}
+
+.fadeGeneralBox:hover .textBox {
+    opacity: 1;
+}
+
+.textContent {
+    background-color: rgba(218, 36, 91, 0.8);
+    color: antiquewhite;
+    font-size: 90%;
+    padding: 1em;
 }
 
 footer {
@@ -92,10 +120,3 @@ footer {
     border-radius: 50%;
     width: 10%;
 }
-
-
-
-
-
-
-
